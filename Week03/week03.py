@@ -131,8 +131,9 @@ class DynamicArray:
         anything was removed.
 
         Removing from the middle leaves a hole, so every later value shifts
-        one slot to the left. The slot freed at the end must be reset to
-        _EMPTY, and the size must shrink by one. Capacity does not change.
+        one slot to the left, and the size shrinks by one. Capacity does not
+        change. The assignment's constraints say what must be true of the
+        slot the array no longer uses.
         """
         raise NotImplementedError("replace this line with your implementation")
 
